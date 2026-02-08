@@ -1,4 +1,4 @@
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, Router } from "react-router-dom";
 import MainLayout from "./layout/MainLayout";
 import Home from "./pages/Home";
 import Services from "./pages/Services";
@@ -13,7 +13,7 @@ import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   return (
-    <div>
+    <>
       <ScrollToTop />
       <Routes>
         <Route path="/" element={<MainLayout />}>
@@ -38,7 +38,7 @@ function App() {
         </Route>
         <Route path="*" element={<NotFound />} />
       </Routes>
-    </div>
+    </>
   );
 }
 
