@@ -1,4 +1,4 @@
-import { Routes, Route, Router } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import MainLayout from "./layout/MainLayout";
 import Home from "./pages/Home";
 import Services from "./pages/Services";
@@ -15,27 +15,25 @@ function App() {
   return (
     <>
       <ScrollToTop />
+
       <Routes>
         <Route path="/" element={<MainLayout />}>
           <Route index element={<Home />} />
+
           <Route path="services" element={<Services />}>
             <Route index element={<ServicesHome />} />
             <Route
               path="website-development"
               element={<WebsiteDevelopment />}
             />
-            <Route
-              path="digital-marketing"
-              element={<DigitalMarketing />}
-            />
-              <Route
-              path="website-designing"
-              element={<WebsiteDesign />}
-            />
+            <Route path="digital-marketing" element={<DigitalMarketing />} />
+            <Route path="website-designing" element={<WebsiteDesign />} />
           </Route>
+
           <Route path="about" element={<About />} />
           <Route path="contact" element={<Contact />} />
         </Route>
+
         <Route path="*" element={<NotFound />} />
       </Routes>
     </>
