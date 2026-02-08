@@ -9,10 +9,12 @@ import ServicesHome from "./pages/ServicesHome";
 import NotFound from "./pages/NotFound";
 import DigitalMarketing from "./pages/DigitalMarketing";
 import WebsiteDesign from "./pages/WebsiteDesign";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   return (
     <div>
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<MainLayout />}>
           <Route index element={<Home />} />
