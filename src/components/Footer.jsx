@@ -4,7 +4,7 @@ import {
   Instagram,
   MessageCircle,
 } from "lucide-react";
-// import vaidehiLogo from "../assets/Vaidehi_logo.png";
+import vaidehiLogo from "../assets/Vaidehi_logo.png";
 
 const Footer = () => {
   return (
@@ -15,7 +15,7 @@ const Footer = () => {
         {/* Company Info */}
         <div>
           <div className="flex items-center gap-3 mb-6">
-            {/* <img src={vaidehiLogo} alt="Vaidehi Consultancy" className="h-10" /> */}
+            <img src={vaidehiLogo} alt="Vaidehi Consultancy" className="h-10" />
             <h3 className="text-lg font-semibold text-white">
               Vaidehi Consultancy Services
             </h3>
