@@ -4,7 +4,7 @@ import {
   Instagram,
   MessageCircle,
 } from "lucide-react";
-import vaidehiLogo from "../assets/vaidehi_logo.png";
+import vaidehiLogo from "../assets/Vaidehi_logo.png";
 
 const Footer = () => {
   return (
