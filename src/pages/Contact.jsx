@@ -22,19 +22,19 @@ const ContactPage = () => {
     {
       id: "email",
       label: "Email",
-      value: "info@vaidehitech.com",
+      value: "vaidehitech1@gmail.com",
       icon: <Mail className="text-blue-500" />,
     },
     {
       id: "phone",
       label: "Phone",
-      value: "+91 XXXXXXXXXX",
+      value: "+91 8971132756",
       icon: <Phone className="text-blue-500" />,
     },
     {
       id: "location",
       label: "Location",
-      value: "Bihar, India",
+      value: "Bhagwanpur,Muzaffarpur,Bihar, India",
       icon: <MapPin className="text-blue-500" />,
     },
   ];

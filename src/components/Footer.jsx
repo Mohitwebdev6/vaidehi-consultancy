@@ -1,17 +1,12 @@
-import {
-  Facebook,
-  Twitter,
-  Instagram,
-  MessageCircle,
-} from "lucide-react";
+import { Facebook, Twitter, Instagram, MessageCircle } from "lucide-react";
 import vaidehiLogo from "../assets/Vaidehi_logo.png";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
     <footer className="bg-[#2b2b2b] text-gray-300">
       {/* Main Footer */}
       <div className="max-w-7xl mx-auto px-6 py-16 grid gap-10 md:grid-cols-2 lg:grid-cols-4">
-        
         {/* Company Info */}
         <div>
           <div className="flex items-center gap-3 mb-6">
@@ -22,17 +17,20 @@ const Footer = () => {
           </div>
 
           <p className="text-sm leading-relaxed">
-            123, Block-A <br />
-            Sector-10, City – 110001 <br />
+            Bhagwanpur,
+            <br />
+            Muzaffarpur, Bihar,
+            <br />
             India
           </p>
 
           <p className="mt-4 text-sm">
-            <span className="font-semibold text-white">Phone:</span> +91 9XXXXXXXXX
+            <span className="font-semibold text-white">Phone:</span> +91
+            8971132756
           </p>
           <p className="text-sm">
             <span className="font-semibold text-white">Email:</span>{" "}
-            info@vaidehicontultancy.in
+            vaidehitech1@gmail.in
           </p>
         </div>
 
@@ -41,22 +39,27 @@ const Footer = () => {
           <h4 className="text-lg font-semibold text-white mb-5">
             Useful Links
           </h4>
-          <ul className="space-y-3 text-sm">
-            {[
-              "Home",
-              "About Us",
-              "Services",
-              "Terms of Service",
-              "Privacy Policy",
-            ].map((item) => (
-              <li
-                key={item}
-                className="hover:text-blue-400 transition cursor-pointer"
-              >
-                {item}
-              </li>
-            ))}
-          </ul>
+          <div className="space-y-3 flex flex-col  text-sm">
+            <Link
+              to="/"
+              className="hover:text-blue-400 transition cursor-pointer"
+            >
+              Home
+            </Link>
+            <Link
+              to="/Contact"
+              className="hover:text-blue-400 transition cursor-pointer"
+            >
+              Contact
+            </Link>
+               <Link
+              to="/Services"
+              className="hover:text-blue-400 transition cursor-pointer"
+            >
+              Services
+            </Link>
+            <a href="#">Terms and Condition</a>
+          </div>
         </div>
 
         {/* Services */}
@@ -83,9 +86,7 @@ const Footer = () => {
 
         {/* Social */}
         <div>
-          <h4 className="text-lg font-semibold text-white mb-5">
-            Follow Us
-          </h4>
+          <h4 className="text-lg font-semibold text-white mb-5">Follow Us</h4>
           <div className="flex gap-4">
             {[Facebook, Twitter, Instagram].map((Icon, i) => (
               <a

@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const ContactUsSection = () => {
   return (
     <section className="w-full bg-white py-28">
@@ -15,7 +17,8 @@ const ContactUsSection = () => {
         </p>
 
         {/* Button */}
-        <button
+        <Link
+          to="/contact"
           className="px-10 py-3 rounded-full border border-blue-600
           text-blue-600 font-medium
           hover:bg-blue-600 hover:text-white
@@ -24,7 +27,7 @@ const ContactUsSection = () => {
           transition duration-300"
         >
           Contact us
-        </button>
+        </Link>
 
       </div>
     </section>

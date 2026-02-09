@@ -1,5 +1,6 @@
 import React from "react";
 import hero_image from "../../assets/hero_image.jpeg";
+import { Link } from "react-router-dom";
 
 function Hero() {
   return (
@@ -26,10 +27,14 @@ function Hero() {
             We provide trusted educational and career consultancy services,
             helping individuals make informed decisions for a better future.
           </p>
-
-          <button className="mt-8 px-8 py-3 border-2 border-blue-500 text-white font-semibold rounded hover:bg-blue-600 transition duration-300">
-            Enquire Now
-          </button>
+          <div className="mt-8">
+            <Link
+              to="/contact"
+              className="mt-8 px-8 py-3 border-2 border-blue-500 text-white font-semibold rounded hover:bg-blue-600 transition duration-300"
+            >
+              Enquire Now
+            </Link>
+          </div>
         </div>
       </div>
     </section>
