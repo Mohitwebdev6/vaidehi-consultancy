@@ -5,14 +5,14 @@ import vaidehi_logo from "../assets/Vaidehi_logo.png";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
-  const [scrolled, setScrolled] = useState(false);
+
 
 
   const navLinks = ["Home", "About", "Services", "Contact"];
 
   return (
     <nav
-      className={`fixed top-0 w-full z-50 transition-all duration-300 bg-blue-400 shadow-md
+      className={`fixed top-0 w-full z-50 transition-all duration-300 bg-white shadow-md
         
       `}
     >
