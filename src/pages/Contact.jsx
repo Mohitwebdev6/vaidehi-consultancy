@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import useSeo from "../hooks/useSeo";
 import {
   Mail,
   Phone,
@@ -11,6 +12,12 @@ import {
 } from "lucide-react";
 
 const ContactPage = () => {
+  useSeo({
+    title: "Vaidehi Consultancy | Contact",
+    description:
+      "Contact Vaidehi Consultancy to discuss website development, digital marketing, or design services.",
+  });
+
   const [formData, setFormData] = useState({
     name: "",
     email: "",

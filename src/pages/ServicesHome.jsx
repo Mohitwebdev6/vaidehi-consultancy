@@ -1,10 +1,19 @@
-import React from 'react'
-import OurServices from '../components/HomeComponents/OurServices'
+import React from "react";
+import useSeo from "../hooks/useSeo";
+import OurServices from "../components/HomeComponents/OurServices";
 
 function ServicesHome() {
+  useSeo({
+    title: "Vaidehi Consultancy | Services",
+    description:
+      "Explore website development, digital marketing, and website design services from Vaidehi Consultancy.",
+  });
+
   return (
-    <div><OurServices/></div>
-  )
+    <div>
+      <OurServices />
+    </div>
+  );
 }
 
-export default ServicesHome
+export default ServicesHome;
